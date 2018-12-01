@@ -1,0 +1,33 @@
+<div class="news-container">
+
+  <div class="image-carousel animate-pop-in">
+    <slideshow [imageUrls]="images"></slideshow>
+  </div>
+
+  <div class="news-title animate-pop-in">
+    <div class="title-font">Upcoming Events</div>
+    <div class="subtitle-font">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+  </div>
+
+  <!-- <div class="card-container" *ngFor="let x of [1,2,3]">
+    <div>Happy Hour Special</div>
+    <span>Enjoy Happy Hour Specials in our restaurant Monday through Friday 3pm-6pm &amp; 9pm-Close! Get the details on our food and drink specials here...</span>
+    <small>03/07/2018</small>
+  </div> -->
+
+  <div class="event" *ngFor="let x of [1,2,3]">
+    <div class="event-container animate-pop-in">
+      <div class="date-container">
+        <div>25</div>
+        <span>NOV</span>
+      </div>
+      <div class="event-info">
+        <div>Happy Hour Specials</div>
+        <p>Enjoy Happy Hour Specials in our restaurant Monday through Friday 3pm-6pm &amp; 9pm-Close! Get the details on our
+          food and drink specials here...</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>

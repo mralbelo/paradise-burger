@@ -1,0 +1,106 @@
+.menu-container{
+  padding: 20px;
+}
+
+.menu-item{
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+.menu-item:hover{
+  box-shadow: 0px 0px 36px #00000024;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-img{
+  width: 78px;
+  height: 78px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu-img img{
+  width: 100%;
+}
+
+.menu-content{
+  width: Calc(100% - 100px);
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.item-title{
+  margin-bottom: 5px;
+}
+
+.item-ingredients{
+  color: #838383;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.special-container{
+  background-image: url('../../assets/img/special-bg-01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 260px;
+  padding: 75px 20px 20px 20px;
+  position: relative;
+}
+
+.special-container small{
+  color: #ea7718;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.special-container .offer-title{
+  font-family: 'Kalam', Sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  color: #fff;
+  width: 70%;
+}
+
+.special-container .offer-description{
+  color: #8b8b8b;
+  width: 70%;
+}
+
+.special-container .offer-price{
+  font-family: 'Kalam', Sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  color: #fff;
+  width: 70%;
+  text-shadow: -2px 2px 0px #462A18, 2px 2px 0px #462A18;
+}
+
+.special-container .offer-button{
+  margin-top: 20px;
+}
+
+.special-container a{
+  padding: 15px 40px;
+  background: #ea7718;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: transparent;
+}
+
+.special-container .offer-img{
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  background: url("../../assets/img/burger-image.png");
+  background-size: auto 140px;
+  background-repeat: no-repeat;
+  height: 140px;
+  width: 120px;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,23 @@
+<div class="action-button animate-pop-in">
+  <div (click)="onPlusminus()" id="plusMinus" class="plusminus"></div>
+</div>
+
+<div *ngIf="fab" class="actions">
+  <ul>
+    <li>
+      <a href="tel:17879010777">
+        <span class="typcn typcn-phone"></span>
+        <div>Give us a call</div>
+      </a>
+    </li>
+    <li>
+      <a href="http://maps.google.com/?q=802 Avenida Roberto H. Todd, San Juan, 00907, Puerto Rico">
+        <span class="typcn typcn-location"></span>
+        <div>Get directions</div>
+      </a>
+
+    </li>
+  </ul>
+</div>
+
+<div (click)="onPlusminus()" *ngIf="fab" class="background"></div>
