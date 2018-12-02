@@ -1,8 +1,8 @@
-<div class="special-container">
+<div class="special-container" *ngIf="special">
   <small>SPECIAL OFFER</small>
-  <div class="offer-title">Classic Burger</div>
-  <div class="offer-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-  <div class="offer-price">$4.99</div>
+  <div class="offer-title">{{special.name}}</div>
+  <div class="offer-description">{{special.description}}</div>
+  <div class="offer-price">{{special.specialPrice | currency }}</div>
   <!-- <div class="offer-button"><a href="#">order now</a></div> -->
   <div class="offer-img"></div>
 </div>
@@ -11,14 +11,14 @@
   <div class="title-font">Our Menu</div>
   <div class="subtitle-font">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</div>
 
-  <div class="menu-item" *ngFor="let x of [1,2,3,4,5]">
+  <div class="menu-item" *ngFor="let item of menu">
     <div class="menu-img">
-      <img src="../../assets/menu/item-1.jpg" alt="Menu Item">
+      <img [src]="item.image" alt="Menu Item">
     </div>
     <div class="menu-content">
-      <div class="item-title">Classic Burger</div>
-      <div class="item-ingredients">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-      <div class="item-price">$7.99</div>
+      <div class="item-title">{{item.name}}</div>
+      <div class="item-ingredients">{{item.description}}</div>
+      <div class="item-price">{{item.price | currency}}</div>
     </div>
   </div>
 

@@ -11,6 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { SlideshowComponent } from 'ng-simple-slideshow/src/app/modules/slideshow/slideshow.component';
 import { TooltipModule } from 'ng2-tooltip-directive';
 import { FloatingActionButtonComponent } from './floating-action-button/floating-action-button.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { FloatingActionButtonComponent } from './floating-action-button/floating
     BrowserModule,
     SlideshowModule,
     TooltipModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

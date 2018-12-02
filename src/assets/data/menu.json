@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "name": "Classic Burger",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "price" : 7.99,
+        "specialPrice": 6.99,
+        "image": "../../assets/menu/item-1.jpg",
+        "category": "burgers",
+        "order": 1,
+        "special": false,
+        "weekdaySpecial": 0
+    },
+    {
+        "id":2,
+        "name": "BLT Burger",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "price" : 3.99,
+        "specialPrice": 2.99,
+        "image": "../../assets/menu/item-1.jpg",
+        "category": "burgers",
+        "order":2,
+        "special": true,
+        "weekdaySpecial": 1
+    },
+    {
+        "id":3,
+        "name": "Cheese Burger",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "price" : 4.99,
+        "specialPrice": 3.99,
+        "image": "../../assets/menu/item-1.jpg",
+        "category": "burger",
+        "order":3,
+        "special": false,
+        "weekdaySpecial": 6
+    },
+    {
+        "id":4,
+        "name": "Simple Burger",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "price" : 5.99,
+        "specialPrice": 4.99,
+        "image": "../../assets/menu/item-1.jpg",
+        "category": "burger",
+        "order":4,
+        "special": false,
+        "weekdaySpecial": 3
+    }    
+]
