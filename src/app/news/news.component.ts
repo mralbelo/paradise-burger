@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import { IEvents } from '../shared/entities/events.entity';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
+
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-news',
@@ -12,9 +18,19 @@ export class NewsComponent implements OnInit {
     '../../assets/menu/angus-generous-fries-pano-v7-copy.jpg',
     '../../assets/menu/e2e06c637229421596197fc833ab8924.png',
    ];
-  constructor() { }
 
-  ngOnInit() {
-  }
+   events: IEvents[] = [];
+
+   constructor(private http: HttpClient) { }
+
+   ngOnInit() {
+     this.loadEvents();
+   }
+   public loadEvents() {
+      this.http.get<IEvents[]>('./assets/data/events.json').subscribe(result => {
+
+        this.events = _.orderBy(result, 'date', 'desc');
+      });
+   }
 
 }

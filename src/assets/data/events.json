@@ -1,7 +1,31 @@
 [
     {
-        "date": "12/15/2018"
-
+      "id": 1,
+      "date": "03/07/2018",
+      "event": "Happy Hour",
+      "eventDescription": "Enjoy Happy Hour Specials in our restaurant Monday through Friday 3pm-6pm & 9pm-Close! Get the details on our food and drink specials here...",
+      "eventLink": "http://www.facebook.com"
+    },
+    {
+      "id": 2,
+      "date": "03/06/2018",
+      "event": "TACO TUESDAYS",
+      "eventDescription": "Join us for Taco Tuesday and enjoy 2 Street Tacos for $5!",
+      "eventLink": "http://www.facebook.com"
+    },
+    {
+      "id": 3,
+      "date": "02/04/2018",
+      "event": "Valentine's Day",
+      "eventDescription": "Join us for Valentine's Day, February 14th! Check out our special menu for the day...",
+      "eventLink": "http://www.facebook.com"
+    },
+    {
+      "id": 4,
+      "date": "02/02/2018",
+      "event": "WINE DOWN WEDNESDAYS WITH MR. COOPER",
+      "eventDescription": "Enjoy half price glasses of wine and music by Mr. Cooper, a Pianist whose selections range from Jimmy Buffett to Bob Marley!",
+      "eventLink": "http://www.facebook.com"
     }
 
 ]

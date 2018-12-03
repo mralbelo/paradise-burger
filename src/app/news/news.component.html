@@ -15,16 +15,15 @@
     <small>03/07/2018</small>
   </div> -->
 
-  <div class="event" *ngFor="let x of [1,2,3]">
+  <div class="event" *ngFor="let event of events">
     <div class="event-container animate-pop-in">
       <div class="date-container">
-        <div>25</div>
-        <span>NOV</span>
+        <div>{{event.date | date:'dd'}}</div>
+        <span>{{event.date | date:'MMM'}}</span>
       </div>
       <div class="event-info">
-        <div>Happy Hour Specials</div>
-        <p>Enjoy Happy Hour Specials in our restaurant Monday through Friday 3pm-6pm &amp; 9pm-Close! Get the details on our
-          food and drink specials here...</p>
+        <div>{{event.event}}</div>
+        <p>{{event.eventDescription}}</p>
       </div>
     </div>
 
