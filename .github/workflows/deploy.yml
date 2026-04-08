@@ -23,14 +23,14 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '14'
           cache: npm
 
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
       - name: Build
-        run: NODE_OPTIONS=--openssl-legacy-provider npx ng build --prod --base-href /paradise-burger/
+        run: npx ng build --prod --base-href /paradise-burger/
 
       - uses: actions/upload-pages-artifact@v3
         with:
